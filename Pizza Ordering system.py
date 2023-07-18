@@ -26,12 +26,12 @@ elif size=='m' or size=='M':
         print(f"The total bill for your {size} size Pizza is ${bill1}")
     else:
         print(f"The total bill for your {size} size Pizza is ${bill1}")
-        che=str(input("DO you need extra cheese over your Pizza? [Yes/No]\n"))
-        if che=='y' or che=='Y':
-            bill1=bill1+1
-            print(f"The total bill for your {size} size Pizza is ${bill1}")
-        else:
-            print(f"The total bill for your {size} size Pizza is ${bill1}")
+    che=str(input("DO you need extra cheese over your Pizza? [Yes/No]\n"))
+    if che=='y' or che=='Y':
+        bill1=bill1+1
+        print(f"The total bill for your {size} size Pizza is ${bill1}")
+    else:
+        print(f"The total bill for your {size} size Pizza is ${bill1}")
     print("Thank You for Visiting Pizza House!")
 elif size=='l' or size=='L':
     bill1 = bill1 + 25
@@ -42,11 +42,11 @@ elif size=='l' or size=='L':
         print(f"The total bill for your {size} size Pizza is ${bill1}")
     else:
         print(f"The total bill for your {size} size Pizza is ${bill1}")
-        che = str(input("DO you need extra cheese over your Pizza? [Yes/No]\n"))
-        if che == 'y' or che == 'Y':
-            bill1 = bill1 + 1
-            print(f"The total bill for your {size} size Pizza is ${bill1}")
-        else:
-            print(f"The total bill for your {size} size Pizza is ${bill1}")
+    che = str(input("DO you need extra cheese over your Pizza? [Yes/No]\n"))
+    if che == 'y' or che == 'Y':
+        bill1 = bill1 + 1
+        print(f"The total bill for your {size} size Pizza is ${bill1}")
+    else:
+        print(f"The total bill for your {size} size Pizza is ${bill1}")
     print("Thank You for Visiting Pizza House!")
 print("Visit Again!!")
