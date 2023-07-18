@@ -26,7 +26,7 @@ Scissors="""
       (____)
 ---.__(___)
 """
-win="""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣴⣶⣶⣶⣿⣿⣿⣿⣶⣶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+win="""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣴⣶⣶⣶⣿⣿⣿⣿⣶⣶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣾⣿⣿⣿⣿⠿⢟⣛⣿⣛⣛⣻⣟⡿⠿⣿⣿⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⢟⣿⡽⠖⠚⠉⠉⢉⣀⣄⠀⠀⠉⠉⠉⠓⠺⢭⣟⠿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⢟⣯⠖⠋⠁⠀⢶⣰⡇⠀⢸⣏⣉⠀⠀⠀⠀⣽⠀⠰⣄⡈⠙⠲⣝⡿⣿⣿⣷⣄⠀⠀⠀⠀⠀⣠⡄⠀⠀⠀⠀⠀
@@ -91,20 +91,21 @@ draw ="""⠀⢀⠀⢀⣀⣠⣤⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
 game_img=[rock, paper, Scissors]
 
 user=int(input("Type 0 for Rock, 1 for Paper, and 2 for Scissor :\n"))
-print(f" You chose \n {user}\n {game_img[user]}")
 comp=random.randint(0, 2)
 print(f"Computer choose\n{comp} \n {game_img[comp]}")
 if user>=3 or user<0:
     print(f"Its an invalid choice, You Lose. \n {lose}")
-elif user==0 and comp==2:
-    print(f"You Win \n{win}")
-elif comp==0 and user==2:
-    print(f"You Lose \n{lose}")
-elif comp==1 and user==2:
-    print(f"You Win\n {win}")
-elif comp>user:
-    print(f"Computer Wins \n{lose}")
-elif user>comp:
-    print(f"You Win \n{win}")
-elif comp==user:
-    print(f"Its a Draw\n {draw}")
+else:
+    print(f" You chose \n {user}\n {game_img[user]}")
+    if user==0 and comp==2:
+        print(f"You Win \n{win}")
+    elif comp==0 and user==2:
+        print(f"You Lose \n{lose}")
+    elif comp==1 and user==2:
+        print(f"You Win\n {win}")
+    elif comp>user:
+        print(f"Computer Wins \n{lose}")
+    elif user>comp:
+        print(f"You Win \n{win}")
+    elif comp==user:
+        print(f"Its a Draw\n {draw}")
