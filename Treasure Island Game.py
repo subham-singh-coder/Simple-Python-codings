@@ -1,5 +1,5 @@
 
-print('''*******************************************************************************
+treasure='''*******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
 |                   |  ,-"_,=""     `"=.|                  |
@@ -18,7 +18,7 @@ ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
-*******************************************************************************''')
+*******************************************************************************'''
 print("Welcome to TREASURE ISLAND")
 print("Your Mission is to find Treasure")
 res=str(input("DO you wanted to go Left or Right? \n"))
@@ -43,6 +43,7 @@ else:
     res1= str(input("Do you wanted to Ride or Fly?\n"))
     if res1=='Fly' or res1=='fly':
         print("You are Killed by Giant Birds")
+        print("You Lose")
     else:
         ride= str(input("What do you wanted to ride? [Rhino/Horse]\n"))
         if ride=='Rhino' or ride=='rhino':
@@ -50,4 +51,4 @@ else:
             print("Game Over For You")
         else:
             print("You have reached Your Destination")
-            print("Treasure Found")
+        print(f"Treasure Found\n{treasure}")
